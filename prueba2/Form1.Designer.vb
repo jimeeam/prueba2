@@ -24,12 +24,13 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Button1 = New Button()
         Button2 = New Button()
+        Button3 = New Button()
         SuspendLayout()
         ' 
         ' Button1
         ' 
         Button1.BackColor = Color.Aquamarine
-        Button1.Location = New Point(362, 113)
+        Button1.Location = New Point(362, 144)
         Button1.Name = "Button1"
         Button1.Size = New Size(75, 23)
         Button1.TabIndex = 0
@@ -46,12 +47,23 @@ Partial Class Form1
         Button2.Text = "Ilsy"
         Button2.UseVisualStyleBackColor = False
         ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.Chocolate
+        Button3.Location = New Point(362, 73)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(75, 23)
+        Button3.TabIndex = 2
+        Button3.Text = "Waldir"
+        Button3.UseVisualStyleBackColor = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Coral
         ClientSize = New Size(800, 450)
+        Controls.Add(Button3)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Name = "Form1"
@@ -61,4 +73,5 @@ Partial Class Form1
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
